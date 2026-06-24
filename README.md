@@ -1,50 +1,113 @@
-🚀 DocuMind AI
+🧠 DocuMind AI
 
-Intelligent Document Question Answering using RAG, Mistral AI & ChromaDB
+<div align="center">
 
-DocuMind AI is a Retrieval-Augmented Generation (RAG) application that allows users to upload documents and interact with them using natural language.
+🚀 AI-Powered Document Intelligence Platform
 
-The system processes documents, generates semantic embeddings, stores them in a vector database, retrieves relevant context, and generates grounded answers using Mistral AI.
+Chat with Your Documents Using RAG, LangChain, Mistral AI & ChromaDB
+
+Transform static documents into an interactive knowledge base powered by Retrieval-Augmented Generation (RAG).
+
+</div>
+
+⸻
+
+🌟 Overview
+
+DocuMind AI is an intelligent document question-answering system built using Retrieval-Augmented Generation (RAG).
+
+Instead of relying solely on a Large Language Model’s pre-trained knowledge, DocuMind AI retrieves relevant information directly from uploaded documents and uses that context to generate accurate, grounded, and context-aware responses.
+
+This project demonstrates practical implementation of:
+
+* 🔍 Semantic Search
+* 🧠 Retrieval-Augmented Generation (RAG)
+* 📚 Vector Databases
+* 🤖 Large Language Models
+* 📄 Document Intelligence Systems
 
 ⸻
 
 ✨ Features
 
-* 📄 Upload PDF, TXT, DOCX, and Markdown files
-* 🔍 Semantic Search using Vector Embeddings
-* 🧠 Retrieval-Augmented Generation (RAG)
-* ⚡ Mistral AI Integration
-* 🗂 ChromaDB Vector Database
-* 💬 Natural Language Question Answering
-* 🎨 Interactive Web Interface
-* 🔐 Secure API Key Management using Environment Variables
+📄 Document Processing
+
+* Upload and process documents
+* Extract textual information
+* Intelligent document chunking
+
+🔍 Semantic Retrieval
+
+* Generate vector embeddings
+* Store embeddings in ChromaDB
+* Similarity-based context retrieval
+
+🧠 AI-Powered Question Answering
+
+* Context-aware responses
+* Grounded answers from source documents
+* Reduced hallucinations through retrieval
+
+🎨 Interactive User Experience
+
+* Simple web interface
+* Real-time document interaction
+* Fast question answering workflow
+
+🔐 Secure Development
+
+* Environment-based configuration
+* API key protection using .env
+* Sensitive files excluded using .gitignore
 
 ⸻
 
-🏗 Architecture
-Document Upload
-      │
-      ▼
-Document Loader
-      │
-      ▼
-Text Chunking
-      │
-      ▼
-Mistral Embeddings
-      │
-      ▼
-ChromaDB
-      │
-      ▼
-Retriever
-      │
-      ▼
-Mistral LLM
-      │
-      ▼
-Generated Answer
-🛠 Tech Stack
+🏗️ System Architecture
+
+                ┌────────────────────┐
+                │  User Documents    │
+                └──────────┬─────────┘
+                           │
+                           ▼
+                ┌────────────────────┐
+                │ Document Loader    │
+                └──────────┬─────────┘
+                           │
+                           ▼
+                ┌────────────────────┐
+                │ Text Chunking      │
+                └──────────┬─────────┘
+                           │
+                           ▼
+                ┌────────────────────┐
+                │ Mistral            │
+                │ Embeddings         │
+                └──────────┬─────────┘
+                           │
+                           ▼
+                ┌────────────────────┐
+                │ ChromaDB           │
+                │ Vector Store       │
+                └──────────┬─────────┘
+                           │
+                           ▼
+                ┌────────────────────┐
+                │ Retriever          │
+                └──────────┬─────────┘
+                           │
+                           ▼
+                ┌────────────────────┐
+                │ Mistral LLM        │
+                └──────────┬─────────┘
+                           │
+                           ▼
+                ┌────────────────────┐
+                │ Generated Answer   │
+                └────────────────────┘
+
+⸻
+
+🛠️ Technology Stack
 
 Backend
 
@@ -52,7 +115,7 @@ Backend
 * LangChain
 * ChromaDB
 
-AI
+AI Stack
 
 * Mistral AI
 * Mistral Embeddings
@@ -64,10 +127,18 @@ Frontend
 * CSS
 * JavaScript
 
+Development Tools
+
+* Git
+* GitHub
+* Virtual Environments
+* Environment Variables
+
 ⸻
 
 📂 Project Structure
-DocuMind-AI/
+
+DocuMind-AI
 │
 ├── Main.py
 ├── app.py
@@ -76,63 +147,111 @@ DocuMind-AI/
 ├── requirements.txt
 │
 ├── document_loader/
+│   ├── pdf.py
+│   └── text.py
+│
 ├── retrievers/
+│   └── mmx.py
+│
 ├── vectorstore/
+│   └── db.py
 │
 ├── .gitignore
 └── README.md
 
+⸻
+
 ⚙️ Installation
 
-Clone Repository
-git clone https://github.com/Harshittt200/DocuMind-AI.git
+1️⃣ Clone Repository
 
+git clone https://github.com/Harshittt200/DocuMind-AI.git
 cd DocuMind-AI
 
-Create Virtual Environment
+2️⃣ Create Virtual Environment
+
 python -m venv .venv
 
-Install Dependencies
+3️⃣ Activate Virtual Environment
+
+macOS / Linux
+
+source .venv/bin/activate
+
+Windows
+
+.venv\Scripts\activate
+
+4️⃣ Install Dependencies
+
 pip install -r requirements.txt
 
-🔑 Environment Variables
+5️⃣ Configure Environment Variables
 
-Create a .env file in the project root:
+Create a .env file:
+
 MISTRAL_API_KEY=YOUR_API_KEY
 
-▶️ Running the Application
+6️⃣ Run Application
+
 python Main.py
 
-Open your browser and visit:
-http://localhost:8000
+⸻
 
-💡 Example Questions
+💬 Example Queries
 
-* Summarize this document
-* What are the key findings?
-* Explain the main concepts discussed
-* Generate an executive summary
-* List important dates and events
-* What conclusions are presented?
+Document Summarization
+
+Summarize this document.
+
+Information Extraction
+
+What are the key findings?
+
+Concept Explanation
+
+Explain the main concepts discussed in the document.
+
+Executive Summary
+
+Generate an executive summary.
 
 ⸻
 
 📸 Demo
 
-Add screenshots here after running the application.
-![Upload Screen](assets/upload.png)
+Add screenshots after running the application.
 
-![Chat Interface](assets/chat.png)
+![Home Screen](assets/home.png)
+![Document Upload](assets/upload.png)
+![Question Answering](assets/chat.png)
 
-🔮 Future Improvements
+⸻
 
-* Multi-document support
+🎯 Learning Outcomes
+
+This project helped me gain practical experience with:
+
+* LangChain Framework
+* Vector Databases
+* Embedding Models
+* Retrieval-Augmented Generation
+* Prompt Engineering
+* Document Processing Pipelines
+* End-to-End AI Application Development
+
+⸻
+
+🔮 Future Enhancements
+
+* Multi-document chat
 * Source citations
 * Streaming responses
-* Chat history
-* Docker deployment
 * FastAPI backend
+* Docker deployment
 * Authentication system
+* Cloud deployment
+* Conversation memory
 
 ⸻
 
@@ -140,10 +259,17 @@ Add screenshots here after running the application.
 
 Harshit Garg
 
-B.Tech Information Technology
+B.Tech – Information Technology
 Ajay Kumar Garg Engineering College
+
+Interested in AI Engineering, Agentic AI, RAG Systems, Backend Development, and Intelligent Applications.
 
 ⸻
 
-⭐ If you found this project useful, consider giving it a star.
+<div align="center">
 
+⭐ If you found this project useful, consider giving it a star!
+
+Built with ❤️ using Python, LangChain, Mistral AI, and ChromaDB.
+
+</div>
