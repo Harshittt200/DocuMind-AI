@@ -1,69 +1,76 @@
-🧠 DocuMind AI
+# 🧠 DocuMind AI
 
 <div align="center">
 
-🚀 AI-Powered Document Intelligence Platform
+# 🚀 AI-Powered Document Intelligence Platform
 
-Chat with Your Documents Using RAG, LangChain, Mistral AI & ChromaDB
+### Chat with Your Documents Using RAG, LangChain, Mistral AI & ChromaDB
 
 Transform static documents into an interactive knowledge base powered by Retrieval-Augmented Generation (RAG).
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+![LangChain](https://img.shields.io/badge/LangChain-Framework-green?style=for-the-badge)
+![Mistral AI](https://img.shields.io/badge/Mistral-AI-orange?style=for-the-badge)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector%20Database-purple?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
 </div>
 
-⸻
+---
 
-🌟 Overview
+## 🌟 Overview
 
-DocuMind AI is an intelligent document question-answering system built using Retrieval-Augmented Generation (RAG).
+DocuMind AI is an intelligent document question-answering system built using **Retrieval-Augmented Generation (RAG)**.
 
-Instead of relying solely on a Large Language Model’s pre-trained knowledge, DocuMind AI retrieves relevant information directly from uploaded documents and uses that context to generate accurate, grounded, and context-aware responses.
+Instead of relying solely on a Large Language Model's pre-trained knowledge, DocuMind AI retrieves relevant information directly from uploaded documents and uses that context to generate accurate, grounded, and context-aware responses.
 
 This project demonstrates practical implementation of:
 
-* 🔍 Semantic Search
-* 🧠 Retrieval-Augmented Generation (RAG)
-* 📚 Vector Databases
-* 🤖 Large Language Models
-* 📄 Document Intelligence Systems
+- 🔍 Semantic Search
+- 🧠 Retrieval-Augmented Generation (RAG)
+- 📚 Vector Databases
+- 🤖 Large Language Models
+- 📄 Document Intelligence Systems
 
-⸻
+---
 
-✨ Features
+# ✨ Features
 
-📄 Document Processing
+### 📄 Document Processing
 
-* Upload and process documents
-* Extract textual information
-* Intelligent document chunking
+- Upload and process documents
+- Extract textual information
+- Intelligent document chunking
 
-🔍 Semantic Retrieval
+### 🔍 Semantic Retrieval
 
-* Generate vector embeddings
-* Store embeddings in ChromaDB
-* Similarity-based context retrieval
+- Generate vector embeddings
+- Store embeddings in ChromaDB
+- Similarity-based context retrieval
 
-🧠 AI-Powered Question Answering
+### 🧠 AI-Powered Question Answering
 
-* Context-aware responses
-* Grounded answers from source documents
-* Reduced hallucinations through retrieval
+- Context-aware responses
+- Grounded answers from source documents
+- Reduced hallucinations through retrieval
 
-🎨 Interactive User Experience
+### 🎨 Interactive User Experience
 
-* Simple web interface
-* Real-time document interaction
-* Fast question answering workflow
+- Simple web interface
+- Real-time document interaction
+- Fast question answering workflow
 
-🔐 Secure Development
+### 🔐 Secure Development
 
-* Environment-based configuration
-* API key protection using .env
-* Sensitive files excluded using .gitignore
+- Environment-based configuration
+- API key protection using `.env`
+- Sensitive files excluded using `.gitignore`
 
-⸻
+---
 
-🏗️ System Architecture
+# 🏗️ System Architecture
 
+```text
                 ┌────────────────────┐
                 │  User Documents    │
                 └──────────┬─────────┘
@@ -104,40 +111,42 @@ This project demonstrates practical implementation of:
                 ┌────────────────────┐
                 │ Generated Answer   │
                 └────────────────────┘
+```
 
-⸻
+---
 
-🛠️ Technology Stack
+# 🛠️ Technology Stack
 
-Backend
+## Backend
 
-* Python
-* LangChain
-* ChromaDB
+- Python
+- LangChain
+- ChromaDB
 
-AI Stack
+## AI Stack
 
-* Mistral AI
-* Mistral Embeddings
-* Retrieval-Augmented Generation (RAG)
+- Mistral AI
+- Mistral Embeddings
+- Retrieval-Augmented Generation (RAG)
 
-Frontend
+## Frontend
 
-* HTML
-* CSS
-* JavaScript
+- HTML
+- CSS
+- JavaScript
 
-Development Tools
+## Development Tools
 
-* Git
-* GitHub
-* Virtual Environments
-* Environment Variables
+- Git
+- GitHub
+- Virtual Environments
+- Environment Variables
 
-⸻
+---
 
-📂 Project Structure
+# 📂 Project Structure
 
+```text
 DocuMind-AI
 │
 ├── Main.py
@@ -158,117 +167,144 @@ DocuMind-AI
 │
 ├── .gitignore
 └── README.md
+```
 
-⸻
+---
 
-⚙️ Installation
+# ⚙️ Installation
 
-1️⃣ Clone Repository
+## 1️⃣ Clone Repository
 
+```bash
 git clone https://github.com/Harshittt200/DocuMind-AI.git
 cd DocuMind-AI
+```
 
-2️⃣ Create Virtual Environment
+## 2️⃣ Create Virtual Environment
 
+```bash
 python -m venv .venv
+```
 
-3️⃣ Activate Virtual Environment
+## 3️⃣ Activate Virtual Environment
 
-macOS / Linux
+### macOS / Linux
 
+```bash
 source .venv/bin/activate
+```
 
-Windows
+### Windows
 
+```bash
 .venv\Scripts\activate
+```
 
-4️⃣ Install Dependencies
+## 4️⃣ Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-5️⃣ Configure Environment Variables
+## 5️⃣ Configure Environment Variables
 
-Create a .env file:
+Create a `.env` file:
 
+```env
 MISTRAL_API_KEY=YOUR_API_KEY
+```
 
-6️⃣ Run Application
+## 6️⃣ Run Application
 
+```bash
 python Main.py
+```
 
-⸻
+---
 
-💬 Example Queries
+# 💬 Example Queries
 
-Document Summarization
+### Document Summarization
 
+```text
 Summarize this document.
+```
 
-Information Extraction
+### Information Extraction
 
+```text
 What are the key findings?
+```
 
-Concept Explanation
+### Concept Explanation
 
+```text
 Explain the main concepts discussed in the document.
+```
 
-Executive Summary
+### Executive Summary
 
+```text
 Generate an executive summary.
+```
 
-⸻
+---
 
-📸 Demo
+# 📸 Demo
 
 Add screenshots after running the application.
 
+```markdown
 ![Home Screen](assets/home.png)
+
 ![Document Upload](assets/upload.png)
+
 ![Question Answering](assets/chat.png)
+```
 
-⸻
+---
 
-🎯 Learning Outcomes
+# 🎯 Learning Outcomes
 
 This project helped me gain practical experience with:
 
-* LangChain Framework
-* Vector Databases
-* Embedding Models
-* Retrieval-Augmented Generation
-* Prompt Engineering
-* Document Processing Pipelines
-* End-to-End AI Application Development
+- LangChain Framework
+- Vector Databases
+- Embedding Models
+- Retrieval-Augmented Generation
+- Prompt Engineering
+- Document Processing Pipelines
+- End-to-End AI Application Development
 
-⸻
+---
 
-🔮 Future Enhancements
+# 🔮 Future Enhancements
 
-* Multi-document chat
-* Source citations
-* Streaming responses
-* FastAPI backend
-* Docker deployment
-* Authentication system
-* Cloud deployment
-* Conversation memory
+- [ ] Multi-document chat
+- [ ] Source citations
+- [ ] Streaming responses
+- [ ] FastAPI backend
+- [ ] Docker deployment
+- [ ] Authentication system
+- [ ] Cloud deployment
+- [ ] Conversation memory
 
-⸻
+---
 
-👨‍💻 Author
+# 👨‍💻 Author
 
-Harshit Garg
+## Harshit Garg
 
-B.Tech – Information Technology
+**B.Tech – Information Technology**  
 Ajay Kumar Garg Engineering College
 
 Interested in AI Engineering, Agentic AI, RAG Systems, Backend Development, and Intelligent Applications.
 
-⸻
+---
 
 <div align="center">
 
-⭐ If you found this project useful, consider giving it a star!
+### ⭐ If you found this project useful, consider giving it a star!
 
 Built with ❤️ using Python, LangChain, Mistral AI, and ChromaDB.
 
